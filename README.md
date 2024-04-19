@@ -23,5 +23,5 @@ Feel free to reach out to me through the following channels:
 - **Email:** santoshsowndappan@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/sowndappan/
 - **Portfolio Website:** https://sowndappan.netlify.app
-- 
+  
 Feel free to customize this template according to your preferences and add more sections if needed. Best of luck with your portfolio!
