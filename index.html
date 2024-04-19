@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sowndappan<img
+        src="assets/student.png" style="width: 40px; height: auto; margin-left: 5px"
+      /></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sowndappan<img
+        src="assets/student.png" style="width: 40px; height: auto; margin-left: 5px"
+      /></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container"><img src="assets/profile.png" alt="John Doe profile picture" />        
+      </div>
+      <div class="section__text">
+        <p class="section__text__p">Hello, I'm</p>
+        <h1 class="title">Sowndappan S</h1>
+        <style>
+          .section__text__p2 {
+            background: linear-gradient(to right, #cd2ff5, #f6842d, #ffeb83);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        </style>
+        <div class="container">
+          
+          <span class="text sec-text">Freelancer</span>
+      </div>
+      <script>
+          const text = document.querySelector(".sec-text");
+          const textLoad = () => {
+              setTimeout(() => {
+                  text.textContent = "CODER";
+              }, 0);
+              setTimeout(() => {
+                  text.textContent = "DESIGNER";
+              }, 4000);
+              setTimeout(() => {
+                  text.textContent = "ARTIST";
+              }, 8000); //1s = 1000 milliseconds
+          }
+          textLoad();
+          setInterval(textLoad, 12000);
+      </script> 
+        <p class="section__text__p2">IT - Student</p>
+        
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('assets/Sowndappan_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sowndappan/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/sowndappan5'"
+          />
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.agIMyTnd_rFdVu5z2VqCagHaIL?rs=1&pid=ImgDetMain"
+            alt="My HackerRank profile"
+            class="icon"
+            onclick="location.href='https://www.hackerrank.com/profile/sowndappan610'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me <img
+        src="assets/rocket.png" style="width: 50px; height: auto;"
+      /></h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="assets/mee1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3 class="pp">Education</h3>
+              <p>
+                <span class="da">B.Tech - INFORMATION TECHNOLOGY</span><br>
+                Knowledge Institute of Technology <strong>2022-2026</strong><br>
+                <span class="da">HIGHER SECONDARY</span><br>Model School, Salem <strong>2020 - 2022</strong><br>
+                <span class="da">SECONDARY SCHOOL</span><br>Govt Boys HSS, Salem <strong>2020</strong>
+              </p>
+            </div>
+            
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3 class="pp">Experience - Intern</h3>
+              <div>
+                <style>
+                  /* CSS for dark "Data Analyst" text */
+                  .da {
+                    font-weight: bold;
+                    color: #000000; /* Dark color */
+                  }
+                </style>
+                
+                <p>
+                  <span class="da">DATA ANALYST</span>
+                  Alteryx Sparked<br>
+                  <strong>Sep - Nov 2023</strong><br>
+                  <span class="da">DATA ANALYST</span>
+                  Coders Cave<br>
+                  <strong>August 2023</strong><br>
+                  <span class="da">DATA ANALYST</span>
+                  AWS Academy<br>
+                  <strong>May - July 2023</strong>
+                </p>
+                
+                
+                 
+                
+              </div>
+              <style>
+                .pp {
+                  border-bottom: 1px solid #ccc; /* Border line */
+    margin-bottom: 20px; /* Add some gap */
+    padding-bottom: 10px;
+                  background: linear-gradient(to right, #c114ed, #f6842d, #fa7d4b);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+              </style>
+            </div>
+            
+          </div>
+          <div class="text-container">
+            <p>
+              Hello there! 👋 I'm an IT enthusiast, currently navigating the exciting waters of AI and machine learning in my sophomore year at KIOT. What fuels my passion? It's the joy of decrypting the codes to tomorrow’s problems today.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills & Achievements <img
+        src="assets/rocket.png" style="width: 50px; height: auto;"
+      /></h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Problem Solving</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C, Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML, CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power Point, Canvas</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figure Drawing</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Achievements</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Coding Battle</h3>
+                  <p>1st prize</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Design</h3>
+                  <p>2nd prize</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Achievement Award</h3>
+                  <p>At KIOT</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Participations</h3>
+                  <p>- Hackathons</p>
+                  <p>- Paper Presentations</p>
+                  <p>- Webinars</p>
+                  <p>- Courses</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects <img
+        src="assets/rocket.png" style="width: 50px; height: auto;"
+      /></h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://img.freepik.com/vecteurs-libre/logo-ai-artificial-intelligence-dans-mains-concept-intelligence-artificielle-apprentissage-machine-sphere-onde-grille-code-binaire_127544-18.jpg?size=626&ext=jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AI & ML Projects</h2>
+            <a href="https://github.com/sowndappan5/Hand-Recognition-AI-Ml-Project" style="text-decoration: none;">Hand-Recognition-AI-Ml-Project</a>
+            <a href="https://github.com/sowndappan5/Symbol-Recognition-form-Hand" style="text-decoration: none;">Symbol-Recognition-form-Hand</a>
+
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/web.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Web Projects</h2>
+            <a href="https://github.com/sowndappan5/medical/tree/main" style="text-decoration: none;">Medical Website</a>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="assets/intern.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Internship projects</h2>
+            <a href="https://github.com/sowndappan5/YBI-Project" style="text-decoration: none;">YBI Project</a>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me <img
+        src="assets/rocket.png" style="width: 50px; height: auto;"
+      /></h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:santoshsowndappan@gmail.com">santoshsowndappan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sowndappan/">LinkedIn</a></p>
+        </div>
+      </div>
+      
+    </section>
+    <footer>
+      <div class="contact-info-container">
+        <p style="color: #000000; font-weight: bold;">Location<img
+          src="assets/location.png" style="width: 20px; height: auto; margin-left: 5px"
+        /><br>
+          <a href="https://maps.app.goo.gl/xre8MjG396FwnQjc7" style="text-decoration: none; color: rgb(104, 104, 104);" onmouseover="this.style.color='blue'" onmouseout="this.style.color='black'">92L, Pulikara Street, Kalarampatti, Salem, Tamil Nadu, India</a>
+
+      </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
